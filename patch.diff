@@ -1,0 +1,25 @@
+From d93dc9eae80131b05f07b7f96cdee0e936ed3f0c Mon Sep 17 00:00:00 2001
+From: Kimhuissun <sunnnycar@gmail.com>
+Date: Thu, 5 Dec 2019 19:24:19 +0900
+Subject: [PATCH] example commit
+
+---
+ app/src/main/java/com/example/myapplication/MainActivity.kt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/app/src/main/java/com/example/myapplication/MainActivity.kt b/app/src/main/java/com/example/myapplication/MainActivity.kt
+index 2b5329b..5f41fd9 100644
+--- a/app/src/main/java/com/example/myapplication/MainActivity.kt
++++ b/app/src/main/java/com/example/myapplication/MainActivity.kt
+@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
+                     is Result.Failure -> {
+                         Log.i("ErrorMsg", result.getException().message)
+                         result.getException().stackTrace
+-                        throw Exception(result.getException())
++                        throw Exception(result.getException())//
+                     }
+ 
+                     is Result.Success->{
+-- 
+2.21.0.windows.1
+
