@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
                     is Result.Failure -> {
                         Log.i("ErrorMsg", result.getException().message)
                         result.getException().stackTrace
-                        throw Exception(result.getException())
+                        throw Exception(result.getException())//
                     }
 
                     is Result.Success->{
